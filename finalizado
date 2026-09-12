@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Enviado</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f6f9; text-align: center; padding: 20px; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 400px; }
+        h1 { color: #2ecc71; margin-bottom: 10px; }
+        p { color: #555; font-size: 16px; line-height: 1.5; }
+        .btn-close { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #34495e; color: white; border: none; border-radius: 6px; text-decoration: none; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>¡Envío Exitoso!</h1>
+    <p>Tus datos y ubicación geográfica se han registrado correctamente.</p>
+    <p><strong>Ya puedes cerrar esta pestaña de forma segura.</strong></p>
+    <!-- Intentamos el cierre por botón por si el navegador lo permite -->
+    <button class="btn-close" onclick="window.close();">Cerrar Ventana</button>
+</div>
+
+</body>
+</html>
