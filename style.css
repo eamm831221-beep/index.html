@@ -1,1 +1,41 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #eceff1;
+    margin: 0;
+    padding: 12px;
+}
+.container {
+    max-width: 550px;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+h2 { color: #0f342e; text-align: center; margin-bottom: 25px; }
+h3 { color: #1a5249; border-bottom: 2px solid #b2dfdb; padding-bottom: 6px; margin-top: 35px; }
+.form-group { margin-bottom: 22px; }
+label { display: block; font-weight: 600; margin-bottom: 6px; color: #263238; }
+input[type="text"], input[type="tel"], select, textarea {
+    width: 100%; padding: 12px; box-sizing: border-box;
+    border: 1px solid #cfd8dc; border-radius: 5px; font-size: 16px;
+}
+.geo-inputs { display: flex; gap: 10px; margin-top: 6px; }
+.geo-inputs input { background-color: #f5f5f5; text-align: center; font-weight: bold; }
+.radio-tile-group { display: flex; gap: 12px; }
+.radio-tile-group.vertical { flex-direction: column; gap: 8px; }
+.radio-tile {
+    position: relative; flex: 1; display: flex; align-items: center;
+    justify-content: center; border: 2px solid #cfd8dc; padding: 14px;
+    border-radius: 6px; cursor: pointer; text-align: center; background: #fafafa;
+}
+.radio-tile input { position: absolute; opacity: 0; }
+.radio-tile:has(input:checked) {
+    border-color: #00796b; background-color: #e0f2f1; font-weight: bold; color: #004d40;
+}
+button { width: 100%; font-size: 16px; padding: 14px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+.btn-primary { background: #0288d1; color: white; margin-bottom: 8px; }
+.btn-submit { background: #00796b; color: white; margin-top: 15px; }
+.btn-sync { background: #f57c00; color: white; margin-top: 10px; }
+.status-box { background: #cfd8dc; padding: 15px; border-radius: 6px; margin-bottom: 25px; text-align: center; font-weight: bold; }
 
