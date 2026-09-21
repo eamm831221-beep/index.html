@@ -3,24 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Enviado</title>
-    <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f6f9; text-align: center; padding: 20px; }
-        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 400px; }
-        h1 { color: #2ecc71; margin-bottom: 10px; }
-        p { color: #555; font-size: 16px; line-height: 1.5; }
-        .btn-close { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #34495e; color: white; border: none; border-radius: 6px; text-decoration: none; font-weight: bold; cursor: pointer; }
-    </style>
+    <title>Formulario de Visitas VCXC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
+    <div class="container">
+        <h2>Registro de Visitas VCXC</h2>
+        
+        <!-- Estado de la sincronización -->
+        <div id="sync-status" class="status-box">
+            Registros guardados localmente: <span id="local-count">0</span>
+            <button id="btn-sync" class="btn-sync">Sincronizar a Google Sheets</button>
+        </div>
 
-<div class="card">
-    <h1>¡Envío Exitoso!</h1>
-    <p>Tus datos y ubicación geográfica se han registrado correctamente.</p>
-    <p><strong>Ya puedes cerrar esta pestaña de forma segura.</strong></p>
-    <!-- Intentamos el cierre por botón por si el navegador lo permite -->
-    <button class="btn-close" onclick="window.close();">Cerrar Ventana</button>
-</div>
+        <form id="visita-form">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Visitas VCXC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Visitas VCXC</h2>
+        
+        <!-- Estado de la sincronización -->
+        <div id="sync-status" class="status-box">
+            Registros guardados localmente: <span id="local-count">0</span>
+            <button id="btn-sync" class="btn-sync">Sincronizar a Google Sheets</button>
+        </div>
 
+        <form id="visita-form">
+                    <option value="DAVILA TOVAR BERENICE">DAVILA TOVAR BERENICE</option>
+                    <option value="DE SANTIAGO SAUCEDO LAEYDY KARINA">DE SANTIAGO SAUCEDO LAEYDY KARINA</option>
+                    <option value="DIAZ NAVARRETE ESPERANZA">DIAZ NAVARRETE ESPERANZA</option>
+                    <option value="DIAZ TRUJILLO RAMON DE JESUS">DIAZ TRUJILLO RAMON DE JESUS</option>
+                    <option value="DOMINGUEZ CORCHADO SERGIO ALBERTO">DOMINGUEZ CORCHADO SERGIO ALBERTO</option>
+                    <option value="ELIZALDE REYES IVETTE SARAI">ELIZALDE REYES IVETTE SARAI</option>
+                    <option value="ESQUIVEL MASCORRO NANCY ACELA">ESQUIVEL MASCORRO NANCY ACELA</option>
+                    <option value="ESTRADA MOLINA MIGUEL DE JESUS">ESTRADA MOLINA MIGUEL DE JESUS</option>
+                    <option value="EZQUEDA MARIA MAYELA">EZQUEDA MARIA MAYELA</option>
+                    <option value="FAVELA SERRANO RAQUEL">FAVELA SERRANO RAQUEL</option>
+                    <option value="FIERRO GARCIA MARIA ELIZABETH">FIERRO GARCIA MARIA ELIZABETH</option>
+                    <option value="FIGUEROA LOPEZ LAURA YANIRA">FIGUEROA LOPEZ LAURA YANIRA</option>
+                    <option value="FLORES ADAME MARGARITA">FLORES ADAME MARGARITA</option>
+                    <option value="FLORES TORRES LESLY YAMILETH">FLORES TORRES LESLY YAMILETH</option>
+                    <option value="FUENTES HERNANDEZ CITLALI SARAHI">FUENTES HERNANDEZ CITLALI SARAHI</option>
+                    <option value="GANDARILLA RAMIREZ LUCILA">GANDARILLA RAMIREZ LUCILA</option>
+                    <option value="GARCIA ENCERRADO JUAN JOSE">GARCIA ENCERRADO JUAN JOSE</option>
+                    <option value="GARCIA ESPINO GUADALUPE DEL SOCORRO">GARCIA ESPINO GUADALUPE DEL SOCORRO</option>
+                    <option value="GUERECA VILLAGRANA GABRIELA">GUERECA VILLAGRANA GABRIELA</option>
+                    <option value="GUILLEN PEREZ FELIPE">GUILLEN PEREZ FELIPE</option>
+                    <option value="HERNANDEZ CAMPOS BERA TOMASA">HERNANDEZ CAMPOS BERA TOMASA</option>
+                    <option value="HERNANDEZ MUÑOZ JOSE RAMON">HERNANDEZ MUÑOZ JOSE RAMON</option>
+                    <option value="HERNANDEZ ORTIZ MARY CRUZ">HERNANDEZ ORTIZ MARY CRUZ</option>
+                    <option value="HERNANDEZ PUENTES LUIS AGUSTIN">HERNANDEZ PUENTES LUIS AGUSTIN</option>
+                    <option value="HERNANDEZ TORRES DIEGO ALFONSO">HERNANDEZ TORRES DIEGO ALFONSO</option>
+                    <option value="HERNANDEZ SANTOYO ROCIO">HERNANDEZ SANTOYO ROCIO</option>
+                    <option value="JACQUEZ LOPEZ LUIS RENE">JACQUEZ LOPEZ LUIS RENE</option>
+                    <option value="LEAL BECERRA MARGARITA">LEAL BECERRA MARGARITA</option>
+                    <option value="LIRA HERNANDEZ JESUS ANTONIO">LIRA HERNANDEZ JESUS ANTONIO</option>
+                    <option value="LLAMAS DIAZ MARIA GUADALUPE">LLAMAS DIAZ MARIA GUADALUPE</option>
+                    <option value="LOPEZ CAZARES JOSE ANGEL">LOPEZ CAZARES JOSE ANGEL</option>
+                    <option value="LOPEZ GARCIA RODOLFO">LOPEZ GARCIA RODOLFO</option>
+                    <option value="LOZANO MARQUEZ ERIKA LILIANA">LOZANO MARQUEZ ERIKA LILIANA</option>
+                    <option value="MACIEL CHAVEZ ANDREA IDALY">MACIEL CHAVEZ ANDREA IDALY</option>
+                    <option value="MAGALLANES VERA CLAUDIA JAQUELINE">MAGALLANES VERA CLAUDIA JAQUELINE</option>
+                    <option value="MARQUEZ ARREOLA JESUS HERNAN">MARQUEZ ARREOLA JESUS HERNAN</option>
+                    <option value="MARTINEZ CAMPOS ALEJANDRA">MARTINEZ CAMPOS ALEJANDRA</option>
+                    <option value="MARTINEZ HERRADA GRISELDA YADIRA">MARTINEZ HERRADA GRISELDA YADIRA</option>
+                    <option value="MARTINEZ RIOS DIAMAR">MARTINEZ RIOS DIAMAR</option>
+                    <option value="MARTINEZ VALLES EVARISTA MARIA LORENA">MARTINEZ VALLES EVARISTA MARIA LORENA</option>
+                    <option value="MAYA CARRIZALES CECILIA LIZBETH">MAYA CARRIZALES CECILIA LIZBETH</option>
+                    <option value="MEDINA ARELLANO MARIA ISABEL">MEDINA ARELLANO MARIA ISABEL</option>
+                    <option value="MEDRANO VALENZUELA ZAIRA YAMILETH">MEDRANO VALENZUELA ZAIRA YAMILETH</option>
+                    <option value="MENDEZ TOVAR OLGA LETICIA">MENDEZ TOVAR OLGA LETICIA</option>
+                    <option value="MOJICA CASTAÑEDA GRISELDA">MOJICA CASTAÑEDA GRISELDA</option>
+                    <option value="MOLINA CASTILLO YAZMIN">MOLINA CASTILLO YAZMIN</option>
+                    <option value="MORENO ANDRADE MARTHA PATRICIA">MORENO ANDRADE MARTHA PATRICIA</option>
+                    <option value="MORILLON MUÑOZ MARTHA LETICIA">MORILLON MUÑOZ MARTHA LETICIA</option>
+                    <option value="MUÑOZ QUIROZ ANGEL">MUÑOZ QUIROZ ANGEL</option>
+                    <option value="MUÑOZ SOSA JOSE SANTIAGO">MUÑOZ SOSA JOSE SANTIAGO</option>
+                    <option value="NAJERA GARCIA YAMIL">NAJERA GARCIA YAMIL</option>
+                    <option value="NAJERA HERNANDEZ KARLA JANETH">NAJERA HERNANDEZ KARLA JANETH</option>
+                    <option value="NAVARRETE SIAÑEZ TOMASA">NAVARRETE SIAÑEZ TOMASA</option>
+                    <option value="NIÑO ESTRELLA MARIA ELENA">NIÑO ESTRELLA MARIA ELENA</option>
+                    <option value="OLIVO SIFUENTES ENRIQUE">OLIVO SIFUENTES ENRIQUE</option>
+                    <option value="ORTIZ UZQUIANO JOSE MANUEL">ORTIZ UZQUIANO JOSE MANUEL</option>
+                    <option value="PACHECO ROBLES JUSTINO ENRIQUE">PACHECO ROBLES JUSTINO ENRIQUE</option>
+                    <option value="PADILLA GARCIA MARIA GUADALUPE">PADILLA GARCIA MARIA GUADALUPE</option>
+                    <option value="PALMA GUTIERREZ MA GUADALUPE">PALMA GUTIERREZ MA GUADALUPE</option>
+                    <option value="PALOMO CORONADO ARISTEO">PALOMO CORONADO ARISTEO</option>
+                    <option value="PEÑA CANO MARIA LUCINA">PEÑA CANO MARIA LUCINA</option>
+                    <option value="PEREZ ALANIS JONATHAN">PEREZ ALANIS JONATHAN</option>
+                    <option value="PEREZ TOVAR MARIO ALBERTO">PEREZ TOVAR MARIO ALBERTO</option>
+                    <option value="PILLADO DURAN ROSA MARIA">PILLADO DURAN ROSA MARIA</option>
+                    <option value="PUGA TORRES JUANA MARIA">PUGA TORRES JUANA MARIA</option>
+                    <option value="RAMIREZ ARZOLA SONIA INGRID">RAMIREZ ARZOLA SONIA INGRID</option>
+                    <option value="RAMIREZ HINOJOSA MISAEL">RAMIREZ HINOJOSA MISAEL</option>
+                    <option value="RAMOS GUTIERREZ KARINA">RAMOS GUTIERREZ KARINA</option>
+                    <option value="RETANA OLIVAS ARTEMIO">RETANA OLIVAS ARTEMIO</option>
+                    <option value="REYES CARRILLO MAELBI BELEN">REYES CARRILLO MAELBI BELEN</option>
+                    <option value="REYES CONTRERAS JULIANA IVETTE">REYES CONTRERAS JULIANA IVETTE</option>
+                    <option value="REZA MERAZ CINDY PAMELA">REZA MERAZ CINDY PAMELA</option>
+                    <option value="RIVAS MERAZ YOSIMAR">RIVAS MERAZ YOSIMAR</option>
+                    <option value="RIVERA PEREZ MIRIAM">RIVERA PEREZ MIRIAM</option>
+                    <option value="ROCHA ENRIQUEZ BLANCA ESTELA">ROCHA ENRIQUEZ BLANCA ESTELA</option>
+                    <option value="RODRIGUEZ DE LA CRUZ FLOR IVET">RODRIGUEZ DE LA CRUZ FLOR IVET</option>
+                    <option value="RODRIGUEZ ESQUIVEL CELIA">RODRIGUEZ ESQUIVEL CELIA</option>
+                    <option value="RODRIGUEZ FERRER GABRIELA DEL PILAR">RODRIGUEZ FERRER GABRIELA DEL PILAR</option>
+                    <option value="RODRIGUEZ NUÑEZ ALMA ANGELICA">RODRIGUEZ NUÑEZ ALMA ANGELICA</option>
+                    <option value="RODRIGUEZ NUÑEZ FLOR AIDE">RODRIGUEZ NUÑEZ FLOR AIDE</option>
+                    <option value="RODRIGUEZ REYES LUIS">RODRIGUEZ REYES LUIS</option>
+                    <option value="RODRIGUEZ SALAZAR NADIA">RODRIGUEZ SALAZAR NADIA</option>
+                    <option value="RODRIGUEZ SANCHEZ JESUS GUADALUPE">RODRIGUEZ SANCHEZ JESUS GUADALUPE</option>
+                    <option value="RODRIGUEZ SANCHEZ LAURA CECILIA">RODRIGUEZ SANCHEZ LAURA CECILIA</option>
+                    <option value="ROJAS MAZUCA BRENDA PATRICIA">ROJAS MAZUCA BRENDA PATRICIA</option>
+                    <option value="SALAZAR ROCHA AZUL MICHELLE">SALAZAR ROCHA AZUL MICHELLE</option>
+                    <option value="SALAS SAMANIEGO ANA BEATRIZ">SALAS SAMANIEGO ANA BEATRIZ</option>
+                    <option value="SALAZAR AROÑA DULCE LILIANA">SALAZAR AROÑA DULCE LILIANA</option>
+                    <option value="SANTOYO SERRATO ANA LILIA">SANTOYO SERRATO ANA LILIA</option>
+                    <option value="SAUCEDO MARTINEZ ALEJANDRA VIRIDIANA">SAUCEDO MARTINEZ ALEJANDRA VIRIDIANA</option>
+                    <option value="SERRANO VEGA FRANCISCA">SERRANO VEGA FRANCISCA</option>
+                    <option value="TEJEDA GARCIA ANDREA">TEJEDA GARCIA ANDREA</option>
+                    <option value="TORRES MARTINEZ DANIEL">TORRES MARTINEZ DANIEL</option>
+                    <option value="SOSA HERNANDEZ FABIOLA LIZETTE">SOSA HERNANDEZ FABIOLA LIZETTE</option>
+                    <option value="VALDEZ CHAVEZ BRENDA LILIANA">VALDEZ CHAVEZ BRENDA LILIANA</option>
+                    <option value="VALENCIA LAZOS VALENTE">VALENCIA LAZOS VALENTE</option>
+                    <option value="VAZQUEZ CARDOZA SILVIA PATRICIA">VAZQUEZ CARDOZA SILVIA PATRICIA</option>
+                    <option value="VAZQUEZ MELENDEZ ALMA ROSA">VAZQUEZ MELENDEZ ALMA ROSA</option>
+                    <option value="VILLA MORENO MA DE LA LUZ">VILLA MORENO MA DE LA LUZ</option>
+                    <option value="VILLELA ACOSTA NORMA KARENTH ARELY">VILLELA ACOSTA NORMA KARENTH ARELY</option>
+                    <option value="ZAMARRIPA VELAZQUEZ AGUILERA SEGUNDO">ZAMARRIPA VELAZQUEZ AGUILERA SEGUNDO</option>
+                    <option value="VICTOR DANIEL PEREZ PRIETO">VICTOR DANIEL PEREZ PRIETO</option>
+                    <option value="LLAJAYRA MAYELA PULIDO MARQUEZ">LLAJAYRA MAYELA PULIDO MARQUEZ</option>
+                    <option value="JUAN CARLOS REVELES ANDRADE">JUAN CARLOS REVELES ANDRADE</option>
+                    <option value="SALVADOR MELCHOR REYES">SALVADOR MELCHOR REYES</option>
+                    <option value="GERARDO REYES">GERARDO REYES</option>
+                </select>
+            </div>
+            <h3>DATOS DE LA PERSONA ENTREVISTADA</h3>
+            
+            <div class="form-group">
+                <label for="nombre">3. Nombre</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido_paterno">4. Apellido paterno</label>
+                <input type="text" id="apellido_paterno" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido_materno">5. Apellido materno</label>
+                <input type="text" id="apellido_materno" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">6. Teléfono</label>
+                <input type="tel" id="telefono" pattern="[0-9]{10}" placeholder="10 dígitos" required>
+            </div>
+
+            <div class="form-group">
+                <label>7. Sexo</label>
+                <div class="radio-tile-group">
+                    <label class="radio-tile">
+                        <input type="radio" name="sexo" value="Hombre" required>
+                        <span class="radio-label">Hombre</span>
+                    </label>
+                    <label class="radio-tile">
+                        <input type="radio" name="sexo" value="Mujer">
+                        <span class="radio-label">Mujer</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>8. Grupo de edad</label>
+                <div class="radio-tile-group vertical">
+                    <label class="radio-tile">
+                        <input type="radio" name="grupo_edad" value="Joven de 15 a 29 años" required>
+                        <span class="radio-label">Joven de 15 a 29 años</span>
+                    </label>
+                    <label class="radio-tile">
+                        <input type="radio" name="grupo_edad" value="Adulto de 30 a 64 años">
+                        <span class="radio-label">Adulto de 30 a 64 años</span>
+                    </label>
+                    <label class="radio-tile">
+                        <input type="radio" name="grupo_edad" value="Adulto Mayor de 65 años">
+                        <span class="radio-label">Adulto Mayor de 65 años</span>
+                    </label>
+                </div>
+            </div>
+            <h3>DOMICILIO</h3>
+
+            <div class="form-group">
+                <label for="domicilio">9. Calle, Numero, Colonia</label>
+                <textarea id="domicilio" rows="4" placeholder="Gran cantidad de texto..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="localidad">10. Localidad</label>
+                <input type="text" id="localidad" required>
+            </div>
+            <div class="form-group">
+                <label for="zona">11. Zona</label>
+                <input type="text" id="zona" pattern="[0-9]{3}" maxlength="3" placeholder="3 dígitos (Ej. 045)" required>
+            </div>
+            <div class="form-group">
+                <label for="seccion">12. Sección</label>
+                <input type="text" id="seccion" pattern="[0-9]{4}" maxlength="4" placeholder="4 dígitos (Ej. 1205)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="programa">13. Programa al que pertenece</label>
+                <select id="programa" required>
+                    <option value="">Selecciona un programa...</option>
+                    <option value="Adulto Mayor">Adulto Mayor</option>
+                    <option value="Discapacidad">Discapacidad</option>
+                    <option value="Mujeres Bienestar">Mujeres Bienestar</option>
+                    <option value="Beca Benito Juarez">Beca Benito Juarez</option>
+                    <option value="Beca Rita Cetina">Beca Rita Cetina</option>
+                    <option value="Jovenes Construyendo el Futuro">Jovenes Construyendo el Futuro</option>
+                    <option value="Boxeando por la Paz">Boxeando por la Paz</option>
+                    <option value="Ninguno">Ninguno</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="recepcion">14. ¿Cómo califica la recepción del mensaje?</label>
+                <select id="recepcion" required>
+                    <option value="">Selecciona una opción...</option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Bueno">Bueno</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                    <option value="Muy mala">Muy mala</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="problematica">15. Problemática detectada</label>
+                <select id="problematica" required>
+                    <option value="">Selecciona una opción...</option>
+                    <option value="AGUA">AGUA</option>
+                    <option value="ELECTRICIDAD">ELECTRICIDAD</option>
+                    <option value="VIVIENDA">VIVIENDA</option>
+                    <option value="SALUD">SALUD</option>
+                    <option value="EDUCACION">EDUCACION</option>
+                    <option value="TRANSPORTE">TRANSPORTE</option>
+                    <option value="SERVICIOS PUBLICOS">SERVICIOS PUBLICOS</option>
+                    <option value="MEDIO AMBIENTE">MEDIO AMBIENTE</option>
+                    <option value="PROGRAMAS SOCIALES">PROGRAMAS SOCIALES</option>
+                    <option value="TRAMITES">TRAMITES</option>
+                    <option value="OTRO">OTRO</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="observacion">16. OBSERVACION/INCIDENCIA</label>
+                <textarea id="observacion" rows="4" placeholder="Texto abierto para registrar cualquier situación..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Guardar Registro en Campo</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
