@@ -1,5 +1,5 @@
 // URL de tu Web App de Google (la obtendrás al publicar el script)
-const WEB_APP_URL = "TU_URL_DE_GOOGLE_APPS_SCRIPT_AQUI";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwFALg_LLPhk8bwMcIEOAdAJgtFLQ7SZdQP-7GPSmAmvGyyKCuzrJFpSmjWgzZ2vwq7/exec";
 
 // Registrar el Service Worker de la PWA
 if ('serviceWorker' in navigator) {
